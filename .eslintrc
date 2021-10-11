@@ -1,0 +1,33 @@
+{
+    "env": {
+        "node": true,
+        "commonjs": true,
+        "es6": true
+    },
+    "extends": ["standard", "eslint:recommended", "prettier", "prettier/standard"],
+    "parserOptions": {
+        "sourceType": "module"
+    },
+    "plugins": ["prettier"],
+    "rules": {
+        "comma-style": [2, "first"],
+        "indent": ["error", 2],
+        "linebreak-style": ["error", "unix"],
+        "quotes": ["error", "single"],
+        "semi": ["error", "always"],
+        "no-console": "off",
+        "no-unused-vars": [
+            "error",
+            {
+                "no-unused-vars": [
+                    "error",
+                    {
+                        "vars": "all",
+                        "args": "after-used",
+                        "ignoreRestSiblings": false
+                    }
+                ]
+            }
+        ]
+    }
+}
